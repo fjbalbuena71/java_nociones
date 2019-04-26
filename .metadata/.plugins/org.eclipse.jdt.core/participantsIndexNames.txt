@@ -1,0 +1,3 @@
+INDEX VERSION 1.131
+/home/pue/Documents/workspace-sts-3.9.6.RELEASE/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1467051529.index
+/05_Web/src

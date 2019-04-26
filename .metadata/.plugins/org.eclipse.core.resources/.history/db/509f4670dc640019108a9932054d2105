@@ -1,0 +1,16 @@
+
+public class MainVariables {
+	public static void main(String[] args) {
+		//En java tenemos 2 tipos de variables, primitivos y referencias
+		
+		//primitivas: son aquellas que el valor se guarda dentro de la variable
+		int entero1 = 10;
+		double reales=23.24;
+		long enterogrande=111_000_000_000L;
+		boolean verdadero=true;
+		boolean falso=false;
+		
+		System.out.println(enterogrande);
+	}
+
+}

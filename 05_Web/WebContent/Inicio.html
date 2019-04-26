@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Bienvenidos a nuestra web</h1>
+	<!--  esto es un comentario.--> 
+	<!--Esto es lo que se envia al servidor cuando escribes en el form los campos --> 
+	<!-- GET los parametros van dentro de url http://localhost:8080/05_Web/inventado?nombreUsuario=yuyyu&passwordUsuario=uiuiu --> 	
+	<form action="ControladorUsuario" method="post">
+		Nombre: <input type="text" name="nombreUsuario"></input>
+		<br/><br/>
+		Password: <input type="password" name="passwordUsuario"></input>
+		<br/><br/>
+		<input type="submit" value="login"></input>
+	</form>
+</body>
+</html>

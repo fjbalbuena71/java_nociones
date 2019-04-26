@@ -1,0 +1,22 @@
+
+public class MainFunciones {
+	//funcion principal, en java son metodos, no existen funciones globales, todos los metodos estan
+	//asociados a una clase
+	public static void main(String[] args) {
+		
+		
+		
+	}
+	
+	/* sintaxis:
+	 * 1 visibilidad
+	 * 2 estatico o dinamico
+	 * 3 valor de retorno
+	 * 4 nombre del metodo
+	 * 5 argumentos de entrada
+	 */
+	public static void saludo(String nombre) {
+		System.out.println("Yo te saludo" + nombre);
+	}
+
+}

@@ -1,0 +1,10 @@
+package modelo.persistencia;
+
+import java.util.ArrayList;
+import modelo.entidades.Usuario;
+
+public class DaoUsuario {
+	
+	private ArrayList<Usuario> ListaUsuarios;
+
+}

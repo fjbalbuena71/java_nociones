@@ -1,0 +1,44 @@
+
+public class MainSentenciasControl {
+	public static void main(String[] args) {
+		//condicionales
+		int numero=10;
+		
+		if (numero > 10) {
+			System.out.println("El numero mayor 10");
+		
+	    }
+		else if (numero < 10) {
+			System.out.println("sds");
+			
+		}
+		else {
+			System.out.println("fgfgff");
+		}
+		
+		//bucles for,while
+		
+		int numero2=0;
+		while (numero2 <=10) {
+			System.out.println(numero2);
+			numero2++;
+		}
+		
+		String diaSemana="LUNES";
+		
+		switch (diaSemana) {
+		case "LUNES":
+			System.out.println("Es lunes");
+			break;
+		case "MARTES":
+			System.out.println("Es martes");
+			break;
+
+		default:
+			break;
+		}
+			
+
+}
+	
+}

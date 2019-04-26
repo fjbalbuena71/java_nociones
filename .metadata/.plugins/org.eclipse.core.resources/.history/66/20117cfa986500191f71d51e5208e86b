@@ -1,0 +1,14 @@
+package entidades;
+
+public class Persona {
+	public String nombre;
+	public int edad;
+	public double peso;
+	public int metros;
+	
+	public void andar(int metros) {
+		// con this hacemos una referencia al propio objeto
+		this.metros += metros; 
+	}
+
+}

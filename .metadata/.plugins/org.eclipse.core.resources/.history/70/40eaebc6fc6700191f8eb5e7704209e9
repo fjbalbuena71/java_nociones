@@ -1,0 +1,36 @@
+package ejemplo1;
+
+/**
+ * 
+ * normalmente una clase que queremos que sea manejada por spring debe tener el constructor
+ * por defecto y seguir la convencion 
+ * javabeans (atributos privados y getters y setters publicos)
+ *
+ */
+public class Persona {
+	private String nombre;
+	private  int edad;
+	private double peso;
+	
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	public int getEdad() {
+		return edad;
+	}
+	public void setEdad(int edad) {
+		this.edad = edad;
+	}
+	public double getPeso() {
+		return peso;
+	}
+	public void setPeso(double peso) {
+		this.peso = peso;
+	}
+	
+	
+
+}

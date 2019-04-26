@@ -1,0 +1,54 @@
+package entidades;
+
+import java.io.Serializable;
+
+public class Persona extends Object implements Movible, Serializable{
+	private String nombre;
+	private String dni;
+	private int posicion;
+	
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	public String getDni() {
+		return dni;
+	}
+	public void setDni(String dni) {
+		this.dni = dni;
+	}
+	@Override
+	public String toString() {
+		return "Persona [nombre=" + nombre + ", dni=" + dni + "]";
+	}
+	@Override
+	public void moverseLento() {
+		System.out.println("Soy la persona " + nombre + "y me muevo 5 metros");
+		posicion += 5;
+		
+	}
+	@Override
+	public void moverseRapido() {
+		System.out.println("Soy la persona " + nombre + "y me muevo 20 metros");
+		posicion += 20;
+		
+	}
+	@Override
+	public void moverse(int metros) {
+		System.out.println("Soy la persona " + nombre + "y me muevo " + metros + "metros");
+		posicion += metros;
+		return posicion;
+		
+	}
+	public int getPosicion() {
+		return posicion;
+	}
+	public void setPosicion(int posicion) {
+		this.posicion = posicion;
+	}
+	
+	
+
+}

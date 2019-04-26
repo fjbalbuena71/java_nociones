@@ -1,0 +1,10 @@
+package ejemplo2;
+
+public class mainBatalla {
+	public static void main(String[] args) {
+		Guerrero guerrero = new Guerrero();
+		guerrero.setNombre("Del antifaz");
+		guerrero.atacar();
+	}
+
+}

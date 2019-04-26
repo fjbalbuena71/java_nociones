@@ -1,0 +1,7 @@
+package modelo.negocio;
+
+//esta capa se encarga de llevar la logica de negocio de nuestra aplicacion
+//se encarga de toda la funcionalidad de nuestra aplicacion
+public class GestorUsuario {
+
+}

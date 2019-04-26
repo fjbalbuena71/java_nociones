@@ -1,0 +1,41 @@
+package entidades;
+
+public class Persona {
+	
+	// las dos visibilidades son pubilc y privada y se pueden dar tanto a atributos como metodos
+	// public: se puede acceder desde cualquier otra clase
+	// private: solo se puede accedee desde esta clase.
+	public String nombre;
+	public int edad;
+	public double peso;
+	private int metros;
+	
+	// los atributos se inicilizan apor defecto  null si son referencias y a cero si son primitivos o false
+	// si son booleanos
+	
+	//Todos los objetos deben tener un constructor, si no lo creas java te da el 
+	// constructor por defecto:
+	public Persona() {
+		
+	}
+	
+	//constructor creado especifico:
+	public Persona(String nombre, int edad, double peso, int metros) {
+		super(); // palabra reservada que invoca al constructor padre
+		this.nombre = nombre;
+		this.edad = edad;
+		this.peso = peso;
+		this.metros = metros;
+	}
+
+
+	public void andar(int metros) {
+		// con this hacemos una referencia al propio objeto
+		this.metros += metros; 
+	}
+	
+	public int getMetros() {
+		return metros; //los metros son el atributo de clase
+	}
+
+}

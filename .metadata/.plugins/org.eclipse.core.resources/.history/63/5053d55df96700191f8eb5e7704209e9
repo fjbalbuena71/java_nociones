@@ -1,0 +1,21 @@
+package ejemplo1;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Main1 {
+	public static void main(String[] args) {
+		
+		// de esta manera spring no lleva el control del objeto p
+		Persona p = new Persona();
+		p.setNombre("Pepe");
+		p.setEdad(34);
+		p.setPeso(23.5);
+		
+		//arrancamos nuestro contenedor de objetos de spring
+		ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+		Persona Lisa = context.getBean("Lisa", Persona.class)
+		
+	}
+
+}

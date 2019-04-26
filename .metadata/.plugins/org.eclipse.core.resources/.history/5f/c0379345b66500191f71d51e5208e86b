@@ -1,0 +1,25 @@
+package entidades;
+
+public class MainHerencia {
+	public static void main(String[] args) {
+		Empleado empleado = new Programador();
+		
+		empleado.setDni("5433331");
+		empleado.setNombre("Paco");
+		empleado.setNomina(1000);
+		
+		Jefe jefe = new Jefe();
+		jefe.setDni("454545450");
+		jefe.setNombre("Paco");
+		jefe.setNomina(1000);
+		jefe.setIncentivos(1000);
+		
+		Director director = new Director();
+		director.setDni("454545450");
+		director.setNombre("Paco");
+		director.setNomina(1000);
+		
+		
+	}
+
+}

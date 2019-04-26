@@ -1,0 +1,18 @@
+package ejemplo2;
+
+public class Espada {
+	private String tipo;
+
+	public String getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+	
+	public void usar() {
+		System.out.println("Soy una espada de tipo " + tipo " y doy cania");
+	}
+
+}

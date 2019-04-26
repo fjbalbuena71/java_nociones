@@ -1,0 +1,18 @@
+package entidades;
+
+/**
+ * Interfaz que hace que los objectos se puedan mover. Cada objeto se novera como
+ * corresponda
+ * 
+ * @author FBH
+ *
+ */
+
+public interface Movible {
+	
+	public void moverseLento();
+	public void moverseRapido();
+	public void moverse(int metros);
+	
+
+}

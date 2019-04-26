@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Bienvenidos a nuestra web</h1>
+	<form action="">
+		Nombre: <imput type="text" name="nombreUsuario"></imput>
+		Password: <imput type="text" name="passwordUsuario"></imput>
+		<imput type"submit" value="login"></imput>
+	</form>
+</body>
+</html>

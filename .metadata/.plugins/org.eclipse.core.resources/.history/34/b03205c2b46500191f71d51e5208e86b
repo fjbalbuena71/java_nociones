@@ -1,0 +1,14 @@
+package entidades;
+
+public class Director extends Empleado {
+	
+	private ArrayList ListaEmpleados;
+
+	@Override
+	public double calcularSueldo() {
+		
+	}
+	
+	
+
+}

@@ -1,0 +1,25 @@
+package ejemplo2;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class mainBatalla {
+	
+	//arrancamos nuestro contenedor de objetos de spring
+		private static ApplicationContext context = new ClassPathXmlApplicationContext("beansGuerra.xml");
+		
+	public static void main(String[] args) {
+		Guerrero guerrero = new Guerrero();
+		guerrero.setNombre("Del antifaz");
+		Espada espada = new Espada();
+		espada.setTipo("Larga");
+		 //inyectar dependencia
+		guerrero.setArma(espada);
+		guerrero.atacar();
+		
+		//ahora con spring
+		Guerrero guerrero2 = context.getBean("guerrero", Guerrero.class);
+		guerrero2.atacar();
+	}
+
+}

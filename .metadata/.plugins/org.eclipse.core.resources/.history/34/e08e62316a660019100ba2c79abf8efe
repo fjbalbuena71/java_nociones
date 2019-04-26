@@ -1,0 +1,12 @@
+package entidades;
+
+import java.util.ArrayList;
+
+import javax.management.openmbean.*;
+
+public class MainInterfaces {
+	public static void main(String[] args) {
+		ArrayList<Movible> carrera = new ArrayList<>();
+	}
+
+}

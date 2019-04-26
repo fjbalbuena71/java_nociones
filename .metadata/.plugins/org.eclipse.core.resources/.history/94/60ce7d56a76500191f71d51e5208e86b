@@ -1,0 +1,8 @@
+package javabeans;
+
+//java beans es un convenio java sobre la creacion de objetos simples tambien llamados POJOS
+// basicamente son objetos sencillos que no tienen herencia ni logica compleja
+
+public class Persona {
+
+}

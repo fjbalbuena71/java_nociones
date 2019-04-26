@@ -1,0 +1,36 @@
+package main;
+
+import entidades.Persona;
+
+public class MainPOO {
+	public static void main(String[] args) {
+		Persona p = new Persona();
+		p.nombre = "Felix";
+		p.edad = 39;
+		p.peso = 82;
+		
+		Persona p2 = new Persona();
+		p2.nombre = "Marta";
+		p2.edad = 45;
+		p2.peso = 67.8;
+		
+		p.andar (10);
+		// p.metros = 45; esto es erroneo porque metros es private y aqui no lo ves
+		
+		Persona p3 = p2; // apuntamos al mismo objeto donde apunte p2 y lo que cambies en uno se 
+		//cambiara en el otro, esto es muy importante.
+		System.out.println(p3.getMetros());
+		
+		Persona p4 = p;
+		p4.edad = 55;
+		System.out.println(p.edad);
+		
+		cambiarEdad(p4);
+		System.out.println(p4.edad);
+		
+		public void static cambiarEdad(Persona p) {
+			p.edad=66;
+		}
+	}
+
+}
